@@ -16,7 +16,7 @@ end
   
     $clientrb = @"
 chef_server_url 'https://#{node['environment']['automate_url']}/organizations/#{node['environment']['chef_org']}'
-validation_key 'C:\\Users\\Administrator\\AppData\\Local\\Temp\\kitchen\\cookbooks\\windows_bootstrap2012\\recipes\\validator.pem'
+validation_key 'C:\\Users\\Administrator\\AppData\\Local\\Temp\\kitchen\\cookbooks\\ap_demo\\recipes\\validator.pem'
 node_name '{0}'
 policy_group 'development'
 policy_name 'base_windows2012_detect'

@@ -1,4 +1,4 @@
-name 'linux_node'
+name 'ap_demo'
 maintainer 'The Authors'
 maintainer_email 'anthony@chef.io'
 license 'All Rights Reserved'
