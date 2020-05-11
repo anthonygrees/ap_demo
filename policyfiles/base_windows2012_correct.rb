@@ -4,7 +4,7 @@
 # https://github.com/opscode/chef-dk/blob/master/POLICYFILE_README.md
 # A name that describes what the system you're building with Chef does.
 
-name 'base_windows2012'
+name 'base_windows2012_correct'
 
 # Where to find external cookbooks:
 default_source :chef_server, "https://#{ENV['AUTOMATE_HOSTNAME']}/organizations/#{ENV['CHEF_ORG']}"

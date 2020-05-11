@@ -99,3 +99,29 @@
         environment:
          automate_url: <%= ENV['AUTOMATE_HOSTNAME'] %>
          chef_org: <%= ENV['CHEF_ORG'] %>
+    - name: default_win2016_detect
+      run_list:
+        - recipe[ap_demo::windows2016_detect]
+      excludes:
+        - centos-7
+        - windows-2012r2
+      verifier:
+        inspec_tests:
+          - test/integration/default
+      attributes:
+        environment:
+          automate_url: <%= ENV['AUTOMATE_HOSTNAME'] %>
+          chef_org: <%= ENV['CHEF_ORG'] %>
+    - name: default_win2016_correct
+      run_list:
+        - recipe[ap_demo::windows2016_correct]
+      excludes:
+        - centos-7
+        - windows-2012r2
+      verifier:
+        inspec_tests:
+          - test/integration/default
+      attributes:
+        environment:
+          automate_url: <%= ENV['AUTOMATE_HOSTNAME'] %>
+          chef_org: <%= ENV['CHEF_ORG'] %>
