@@ -8,7 +8,7 @@
     subnet_id: <%= ENV['AWS_SUBNET_ID'] %>
     vpc_id: <%= ENV['AWS_VPC_ID'] %>
     associate_public_ip: true
-    instance_type: t2.micro
+    instance_type: m3.medium
     tags:
       # Replace YOURNAME and YOURCOMPANY here
       Name: "Chef Training Node for <YOURNAME>, <%= ENV['TRAINER_NAME'] %>"
