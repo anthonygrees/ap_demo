@@ -17,5 +17,3 @@ cookbook 'cis-win2012r2-l1-hardening', '~> 0.1.1'  ## Stage 3 - Correct
 # run_list: chef-client will run these recipes in the order specified.
 
 run_list 'chef-client', 'audit_agr', 'cis-win2012r2-l1-hardening'  ## Stage 3
-
-override['audit']['profiles']['acsc_ism_baseline'] = { 'compliance': 'acsc_ism_baseline', 'version': '0.1.0' }
