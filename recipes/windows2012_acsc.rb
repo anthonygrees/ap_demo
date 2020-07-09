@@ -6,9 +6,6 @@
 #
 # Validator.pem on Workstation C:\opscode\chefdk\embedded\lib\ruby\gems\2.4.0\gems\berkshelf-6.3.1\spec\config
 #
-template 'c:\waiver.yml' do
-    source '2012_waiver.yml.erb'
-end
 
   powershell_script 'Create config.rb' do
     code <<-EOH
