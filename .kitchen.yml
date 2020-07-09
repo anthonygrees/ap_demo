@@ -126,3 +126,16 @@
         environment:
           automate_url: <%= ENV['AUTOMATE_HOSTNAME'] %>
           chef_org: <%= ENV['CHEF_ORG'] %>
+    - name: default_win2012_acsc_ism
+      run_list:
+        - recipe[ap_demo::windows2012_acsc]
+      excludes:
+        - centos-7
+        - windows-2016
+      verifier:
+        inspec_tests:
+          - test/integration/default
+      attributes:
+        environment:
+         automate_url: <%= ENV['AUTOMATE_HOSTNAME'] %>
+         chef_org: <%= ENV['CHEF_ORG'] %>
