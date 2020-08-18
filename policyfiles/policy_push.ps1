@@ -12,5 +12,19 @@ chef push development base_windows2012_correct.rb
 chef push development base_windows2016_detect.rb
 chef push development base_windows2016_correct.rb
 chef push development base_windows2012_acsc.rb
+chef push agency-1 base_linux_correct.rb
+chef push agency-1 base_linux_detect.rb
+chef push agency-1 base_windows2012_detect.rb
+chef push agency-1 base_windows2012_correct.rb
+chef push agency-1 base_windows2016_detect.rb
+chef push agency-1 base_windows2016_correct.rb
+chef push agency-1 base_windows2012_acsc.rb
+chef push agency-2 base_linux_correct.rb
+chef push agency-2 base_linux_detect.rb
+chef push agency-2 base_windows2012_detect.rb
+chef push agency-2 base_windows2012_correct.rb
+chef push agency-2 base_windows2016_detect.rb
+chef push agency-2 base_windows2016_correct.rb
+chef push agency-2 base_windows2012_acsc.rb
 
 copy C:\chef-repo\.chef\reesyorg.pem C:\chef-repo\cookbooks\ap_demo\recipes\validator.pem
